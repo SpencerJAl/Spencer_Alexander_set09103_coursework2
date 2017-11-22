@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Art_Searcher" Content="Art">
+  <meta name="viewport" content="width=device-width", initial-scale=1">
+  <title>Dishes of the World!</title>
+  <link href="{{ url_for('static', filename='bootstrap-3.3.5-dist/css/bootstrap.min.css') }}" rel="stylesheet" />
+  <link href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet"/>
+  <script src="{{url_for('static', filename='js/jquery-3.2.1.js')}}"></script>
+  <script src="{{url_for('static', filename='bootstrap-3.3.5-dist/js/bootstrap.min.js')}}></script>
+  <script src="{{ url_for('static', filename='js/cw1.js')}}"></script>
+  <link href="{{ url_for('static', filename='images/bowl.jpg')}}" rel="icon"/>
+  <style>
+  body{
+  background-color:steelblue;
+  }
+  .caption{
+  background-color:#ffffff;
+  color:steelblue;
+  }
+  .col-md-4{
+  background-color:#ffffff;
+  width:27%;
+  margin-left:35px;
+  margin-top:15px;
+  }
+  </style>
+ </head>
+ <body>
+ <header>
+  <div class="container">
+   <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-header">
+     <a class="navbar-brand" href="/">Dishes Around the World</a>
+    </div> 
+    <div id="navbar" class="navbar-nav">
+     <ul class="nav navbar-nav">
+      <li><a href="/">Home</a></li>
+      <li><a href="asia">Asain</a></li>
+      <li class="active"><a href="europe">European</a><li>
+      <li><a href="africa">African</a></li>
+      <li><a href="southamerica">South American</a></li>
+      <li><a href="northamerica">North American</a></li>
+     </ul>
+     </div>
+    </nav>
+   </div>
+  </header>
+
+  <br>
+
+  <div id="France">
+  <h1> France</h1>
+  <img src="{{url_for('static', filename='images/japan_world.png')}}" alt="Map
+  of japan"/>
+   <p>Famous for its unique history, france is well known for art,
+   architecture, art but above all else, its unique and varied food </p>
+   <h3>Foods of France</h3>
+
+   <hr>
+
+  <div class="foods">
+
+   <div class="food_ item">
+
+    <div class="col-md-4">
+      <div class="thumbnail">
+       <a href="europe/frane/onion_soup">
+       <img src="{{ url_for ('static', filename='images/eu-food1.png')}}">
+       </a>
+       </div>
+       <div class="caption">
+       <p> iFrench Onion Soup</p>
+       </div>
+      </div>  
+   
+   </div>
+ </body>
+</html>
+

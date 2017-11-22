@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Art_Searcher" Content="Art">
+  <meta name="viewport" content="width=device-width", initial-scale=1">
+  <title>Dishes of the World!</title>
+  <link href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet" type="text/css"/>
+  <link href="{{ url_for('static', filename='bootstrap-3.3.5-dist/css/bootstrap.min.css') }}" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet"/>
+  <script src="{{url_for('static', filename='js/jquery-3.2.1.js')}}"></script>
+  <script src="{{url_for('static', filename='bootstrap-3.3.5-dist/js/bootstrap.min.js')}}></script>
+  <script src="https://maxcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://maxcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  rel="stylesheet"/>
+  <script src="{{ url_for('static', filename='js/cw1.js')}}"></script>
+  <link href="{{ url_for('static', filename='images/bowl.jpg')}}" rel="icon"/>
+  <style>
+  body{
+  background-color:steelblue;
+  }
+  .item img{
+float:center;
+background-color:lightblue;
+  }
+  </style>
+ </head>
+ <body>
+
+ <header>
+  <div class="container">
+   <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-header">
+    <a class="navbar-brand" href="#">Dishes Around the World</a>
+    </div> 
+    <div id="navbar" class="navbar-nav">
+     <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="asia">Asain</a></li>
+      <li><a href="europe">European</a><li>
+      <li><a href="africa">African</a></li>
+      <li><a href="southamerica">South American</a></li>
+      <li><a href="northamerica">North American</a></li>
+     </ul>
+     </div>
+    </nav>
+   </div>
+  </header> 
+
+  <div id="homecenter">
+   <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+     <li data-target="#myCarousel" data-slide-to="1"></li>
+     <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+     <div class="item active">
+      <img src="{{ url_for('static', filename='images/as-food1.jpg')}}"
+      alt="Chinese food">
+     </div>
+
+     <div class="item">
+      <img src="{{ url_for('static', filename='images/sa-food1.jpg')}}"
+      alt="South American Food">
+     </div>
+
+     <div class="item">
+      <img src="{{ url_for('static', filename='images/af-food1.jpg')}}"
+      alt="African Food">
+     </div>
+    </div>
+
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+     <span class="glyphicon-chevron-left"></span>
+     <span class="sr-only">Previous</span>
+    </a>
+
+    <a class="right carousel-control" href="#myCarousel" data-slude="next">
+     <span class="glyphicon-chevron-right"></span>
+     <span class="sr-only">Next</span>
+    </a>
+
+   </div>
+  </div>
+  <hr>
+  <h1> Welome to Dishes from around the world</h1>
+  <h2> Click on any of the regions of the world above to start your culinary trip around
+  the world</h2>
+ </body>
+</html>
+
